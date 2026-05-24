@@ -1,0 +1,13 @@
+# Pretty URLs
+/capabilities      /capabilities.html       200
+/accreditation     /accreditation.html      200
+/m365-e7           /m365-e7.html            200
+/partnering        /partnering.html         200
+/about             /about.html              200
+/engage            /engage.html             200
+
+# Legacy paths
+/contact           /engage.html             301
+/how-we-work       /accreditation.html      301
+/methodology       /accreditation.html      301
+/forge-method      /accreditation.html      301

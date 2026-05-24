@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &mdash; Northforge</title>
+  <meta name="description" content="Sovereign digital capability for Australian Defence, Federal Government and National Security. SECRET-level experience applied to PROTECTED Microsoft cloud platforms.">
+
+  <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192.png">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/_shared.css">
+</head>
+<body>
+  <nav class="nf-nav">
+    <a href="/index.html" class="logo" aria-label="Northforge home">
+      <img src="/assets/ng-mark.png" alt="">
+      <div class="logo-sep"></div>
+      <div class="logo-wm"><span class="north">NORTH</span><span class="forge">FORGE</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/capabilities.html">Capabilities</a>
+      <a href="/accreditation.html">How We Work</a>
+      <a href="/m365-e7.html">M365 E7</a>
+      <a href="/partnering.html">Partnering</a>
+      <a href="/about.html">About</a>
+      <a href="/engage.html" class="nav-contact active">Contact</a>
+    </div>
+    <button class="hamburger" id="hamb" onclick="toggleMenu()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mob-menu" id="mobmenu">
+    <a href="/index.html">Home</a>
+    <a href="/capabilities.html">Capabilities</a>
+    <a href="/accreditation.html">How We Work</a>
+    <a href="/m365-e7.html">M365 E7</a>
+    <a href="/partnering.html">Partnering</a>
+    <a href="/about.html">About</a>
+    <a href="/engage.html" class="nav-contact">Contact</a>
+  </div>
+  <section class="hero">
+    <img class="hero-mark-ghost" src="/assets/ng-mark-large.png" alt="">
+    <div class="breadcrumb"><a href="/index.html">Northforge</a> / <span>Contact</span></div>
+    <h1 class="hero-h1">
+      <span class="heavy">NO SALES CALLS.</span>
+      <span class="light">NO DECKS.</span>
+      <span class="heavy ac">JUST A CONVERSATION.</span>
+    </h1>
+    <div class="hero-meta">
+      <div class="hero-meta-rule"></div>
+      <p class="hero-sub">Tell us about your programme. A practitioner &mdash; not a business development manager &mdash; will respond within one business day.</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="ey">Start a conversation</div>
+    <div class="st">
+      <span class="big">GET IN</span>
+      <span class="big ac">TOUCH</span>
+    </div>
+    <div class="split" style="grid-template-columns:1fr 360px;">
+      <div>
+        <form id="nf-form" class="eng-form" name="northforge-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+          <p style="display:none;"><label>Leave blank: <input name="bot-field"></label></p>
+          <input type="hidden" name="form-name" value="northforge-enquiry">
+
+          <div class="eng-form-row">
+            <div>
+              <label class="eng-form-label" for="f-first">First name</label>
+              <input type="text" name="first-name" placeholder="Jane" id="f-first" required>
+            </div>
+            <div>
+              <label class="eng-form-label" for="f-last">Last name</label>
+              <input type="text" name="last-name" placeholder="Smith" id="f-last">
+            </div>
+          </div>
+
+          <label class="eng-form-label" for="f-org">Organisation</label>
+          <input type="text" name="organisation" placeholder="Department / agency / prime contractor" id="f-org" required>
+
+          <label class="eng-form-label" for="f-email">Work email</label>
+          <input type="email" name="email" placeholder="jane.smith@organisation.gov.au" id="f-email" required>
+
+          <label class="eng-form-label" for="f-class">Classification level (if known)</label>
+          <select name="classification-level" id="f-class">
+            <option value="">Select classification level</option>
+            <option>OFFICIAL</option>
+            <option>OFFICIAL: Sensitive</option>
+            <option>PROTECTED</option>
+            <option>SECRET</option>
+            <option>TOP SECRET</option>
+            <option>Not yet determined</option>
+          </select>
+
+          <label class="eng-form-label" style="margin-bottom:10px;">Capabilities of interest</label>
+          <div class="eng-cb-group">
+            <label class="eng-cb"><input type="checkbox" name="caps[]" value="Secure cloud platforms"><span class="eng-cb-lbl">Secure cloud platforms (Azure)</span></label>
+            <label class="eng-cb"><input type="checkbox" name="caps[]" value="IRAP accreditation"><span class="eng-cb-lbl">IRAP accreditation &mdash; The Forge Method&trade;</span></label>
+            <label class="eng-cb"><input type="checkbox" name="caps[]" value="Identity & Zero Trust"><span class="eng-cb-lbl">Identity &amp; Zero Trust</span></label>
+            <label class="eng-cb"><input type="checkbox" name="caps[]" value="Secure collaboration & Copilot"><span class="eng-cb-lbl">Secure collaboration &amp; Copilot / M365 E7</span></label>
+            <label class="eng-cb"><input type="checkbox" name="caps[]" value="Endpoint security"><span class="eng-cb-lbl">Endpoint security</span></label>
+            <label class="eng-cb"><input type="checkbox" name="caps[]" value="Classified environments"><span class="eng-cb-lbl">On-premises / classified environments</span></label>
+          </div>
+
+          <label class="eng-form-label" for="f-ctx">Programme context</label>
+          <textarea name="programme-context" placeholder="Tell us about your programme &mdash; where you are now, what you&rsquo;re trying to achieve, and key constraints." id="f-ctx"></textarea>
+
+          <label class="eng-form-label" for="f-time">Timeframe</label>
+          <select name="timeframe" id="f-time">
+            <option value="">When do you need to move?</option>
+            <option>Immediately &mdash; programme underway</option>
+            <option>Within 3 months</option>
+            <option>3&ndash;6 months</option>
+            <option>6&ndash;12 months</option>
+            <option>Planning phase</option>
+          </select>
+
+          <button type="submit" class="eng-submit">Send enquiry &rarr;</button>
+
+          <p style="font-family:var(--mono);font-size:9px;color:var(--faint);margin-top:14px;letter-spacing:.06em;line-height:1.65;">
+            Your information is handled under the Australian Privacy Act. Not shared with third parties. A practitioner will respond directly within one business day.
+          </p>
+        </form>
+
+        <div id="nf-success" style="display:none;border:1px solid rgba(232,102,10,.25);padding:48px 28px;text-align:center;">
+          <h3 style="font-family:var(--sans);font-size:22px;font-weight:700;color:var(--text);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px;">Enquiry received</h3>
+          <p style="font-family:var(--serif);font-size:15px;font-weight:300;color:var(--muted);line-height:1.75;font-style:italic;">A Northforge practitioner will review your programme context and respond directly within one business day.</p>
+        </div>
+      </div>
+
+      <div>
+        <div style="border:1px solid rgba(255,255,255,.08);padding:26px 22px;margin-bottom:14px;background:var(--dim);">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--faint);letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;">What happens next</div>
+
+          <div style="display:flex;gap:14px;margin-bottom:14px;">
+            <div style="font-family:var(--mono);font-size:10px;color:var(--ac);width:22px;flex-shrink:0;">01</div>
+            <div style="font-family:var(--serif);font-size:14px;font-weight:300;color:var(--muted);line-height:1.7;font-style:italic;"><strong style="color:rgba(255,255,255,.65);font-style:normal;font-weight:400;">A practitioner reads your context.</strong> Someone who has delivered in classified Defence environments &mdash; not a sales team.</div>
+          </div>
+          <div style="display:flex;gap:14px;margin-bottom:14px;">
+            <div style="font-family:var(--mono);font-size:10px;color:var(--ac);width:22px;flex-shrink:0;">02</div>
+            <div style="font-family:var(--serif);font-size:14px;font-weight:300;color:var(--muted);line-height:1.7;font-style:italic;"><strong style="color:rgba(255,255,255,.65);font-style:normal;font-weight:400;">We respond directly.</strong> Within one business day &mdash; an honest view of how we can help.</div>
+          </div>
+          <div style="display:flex;gap:14px;margin-bottom:14px;">
+            <div style="font-family:var(--mono);font-size:10px;color:var(--ac);width:22px;flex-shrink:0;">03</div>
+            <div style="font-family:var(--serif);font-size:14px;font-weight:300;color:var(--muted);line-height:1.7;font-style:italic;"><strong style="color:rgba(255,255,255,.65);font-style:normal;font-weight:400;">We scope together.</strong> A short call &mdash; no pitch deck, no presales theatre.</div>
+          </div>
+          <div style="display:flex;gap:14px;">
+            <div style="font-family:var(--mono);font-size:10px;color:var(--ac);width:22px;flex-shrink:0;">04</div>
+            <div style="font-family:var(--serif);font-size:14px;font-weight:300;color:var(--muted);line-height:1.7;font-style:italic;"><strong style="color:rgba(255,255,255,.65);font-style:normal;font-weight:400;">We start.</strong> Engagements typically commence within two to four weeks.</div>
+          </div>
+        </div>
+
+        <div style="border:1px solid rgba(255,255,255,.08);padding:26px 22px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--faint);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;">Our commitments</div>
+          <ul class="bul" style="border:none;">
+            <li><div><span>Response from a practitioner, not a sales team</span></div></li>
+            <li><div><span>Honest advice &mdash; including if we&rsquo;re not the right fit</span></div></li>
+            <li><div><span>No unsolicited follow-up if you choose not to proceed</span></div></li>
+            <li style="border:none;"><div><span>Information handled under Australian Privacy Act</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s off">
+    <div class="ey">Direct contact</div>
+    <div class="st">
+      <span class="big">PREFER TO</span>
+      <span class="big ac">REACH OUT DIRECTLY?</span>
+    </div>
+    <div class="def-grid">
+      <div class="def-card">
+        <div class="ey">General enquiries</div>
+        <h3 style="font-family:var(--sans);font-size:16px;font-weight:500;letter-spacing:.06em;text-transform:none;color:var(--text);">hello@northforge.com.au</h3>
+        <p style="font-family:var(--mono);font-size:9px;color:var(--faint);letter-spacing:.06em;font-style:normal;">Responded within 1 business day</p>
+      </div>
+      <div class="def-card">
+        <div class="ey">Accreditation &amp; IRAP</div>
+        <h3 style="font-family:var(--sans);font-size:16px;font-weight:500;letter-spacing:.06em;text-transform:none;color:var(--text);">accreditation@northforge.com.au</h3>
+        <p style="font-family:var(--mono);font-size:9px;color:var(--faint);letter-spacing:.06em;font-style:normal;">For urgent accreditation timelines</p>
+      </div>
+      <div class="def-card">
+        <div class="ey">Partnering enquiries</div>
+        <h3 style="font-family:var(--sans);font-size:16px;font-weight:500;letter-spacing:.06em;text-transform:none;color:var(--text);">partners@northforge.com.au</h3>
+        <p style="font-family:var(--mono);font-size:9px;color:var(--faint);letter-spacing:.06em;font-style:normal;">Primes &amp; industry partners</p>
+      </div>
+      <div class="def-card">
+        <div class="ey">Location</div>
+        <h3 style="font-family:var(--sans);font-size:16px;font-weight:500;letter-spacing:.06em;text-transform:none;color:var(--text);">Canberra, ACT &mdash; Australia</h3>
+        <p style="font-family:var(--mono);font-size:9px;color:var(--faint);letter-spacing:.06em;font-style:normal;">All delivery conducted in-country</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <img src="/assets/ng-mark.png" alt="">
+      <span class="footer-copy">NORTHFORGE &mdash; CANBERRA, AUSTRALIA</span>
+    </div>
+    <div class="footer-links">
+      <a href="/index.html">Home</a>
+      <a href="/capabilities.html">Capabilities</a>
+      <a href="/accreditation.html">How We Work</a>
+      <a href="/about.html">About</a>
+      <a href="/engage.html">Contact</a>
+    </div>
+    <span class="footer-copy">NORTHFORGE.COM.AU</span>
+  </footer>
+  <script>
+    function toggleMenu(){
+      var m = document.getElementById('mobmenu');
+      var h = document.getElementById('hamb');
+      if (m && h) { m.classList.toggle('open'); h.classList.toggle('open'); }
+    }
+    async function handleSubmit(e){
+      e.preventDefault();
+      var fn = document.getElementById('f-first').value.trim();
+      var em = document.getElementById('f-email').value.trim();
+      var org = document.getElementById('f-org').value.trim();
+      if (!fn || !em || !org) { alert('Please complete name, organisation and email.'); return; }
+      var btn = document.querySelector('.eng-submit');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      try {
+        var res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(document.getElementById('nf-form'))).toString()
+        });
+        if (res.ok) {
+          document.getElementById('nf-form').style.display = 'none';
+          document.getElementById('nf-success').style.display = 'block';
+        } else { throw new Error(); }
+      } catch (err) {
+        btn.textContent = 'Send enquiry →';
+        btn.disabled = false;
+        alert('Something went wrong. Please email hello@northforge.com.au directly.');
+      }
+    }
+  </script>
+</body>
+</html>
