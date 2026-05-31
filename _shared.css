@@ -61,7 +61,7 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
 .hero-h1 .ac{color:var(--ac);}
 .hero-meta{display:flex;align-items:flex-start;gap:40px;margin-bottom:44px;}
 .hero-meta-rule{width:2px;background:var(--ac);flex-shrink:0;margin-top:4px;align-self:stretch;min-height:60px;}
-.hero-sub{font-family:var(--serif);font-size:clamp(16px,1.6vw,18px);font-weight:300;color:var(--muted);line-height:1.85;font-style:italic;max-width:540px;}
+.hero-sub{font-family:var(--serif);font-size:clamp(20px,2vw,24px);font-weight:400;color:var(--muted);line-height:1.65;font-style:normal;max-width:680px;}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
 
 /* ── BUTTONS ── */
