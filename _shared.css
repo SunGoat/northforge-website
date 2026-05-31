@@ -5,13 +5,13 @@ html{scroll-behavior:smooth;}
 body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 
 :root{
-  --ac:#E8660A;          /* Forge Orange — accent only */
+  --ac:#e8660a;          /* Forge Orange — accent only */
   --ac2:#c5560a;         /* Forge Orange hover */
   --bg:#080808;          /* Carbon Black — primary surface */
   --off:#0F0F0F;         /* Off-Black — secondary surface */
   --dim:#111111;         /* Tertiary surface */
-  --text:#F5F2ED;        /* Bone White — primary text */
-  --muted:rgba(245,242,237,.46);
+  --text:hsl(30, 20%, 96%);        /* Bone White — primary text */
+  --muted:rgba(247, 246, 244, 0.972);
   --faint:rgba(245,242,237,.18);
   --rule:rgba(255,255,255,.07);
   --sans:'Barlow Condensed',sans-serif;
