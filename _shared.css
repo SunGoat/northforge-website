@@ -214,7 +214,7 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
   font-weight:400;
   color:var(--muted);
   line-height:1.65;
-  font-style:italic;
+  font-style:normal;
   max-width:680px;
 }
 
