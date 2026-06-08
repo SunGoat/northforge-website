@@ -101,11 +101,6 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
   stroke:rgba(232,102,10,.85);
 }
 
-.forge-lines .forge-out{
-  stroke:rgba(232,102,10,1);
-  stroke-width:3;
-  opacity:1;
-}
 
 .forge-lines .forge-in{
   stroke-width:1.2;
