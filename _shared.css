@@ -96,6 +96,10 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
   animation:forgeDraw 4s ease forwards, forgePulse 7s ease-in-out infinite;
 }
 
+.forge-lines path:nth-child(2),
+.forge-lines path:nth-child(4){
+  stroke:rgba(232,102,10,.85);
+}
 .forge-lines .forge-out{
   stroke:rgba(232,102,10,.95);
   stroke-width:2.4;
@@ -104,11 +108,6 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
 
 .forge-lines .forge-in{
   stroke-width:1.2;
-}
-
-.forge-lines path:nth-child(2),
-.forge-lines path:nth-child(4){
-  stroke:rgba(232,102,10,.85);
 }
 
 .forge-glow{
