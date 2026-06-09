@@ -120,14 +120,15 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
 }
 .forge-single-line{
   position:absolute;
-  left:50%;
-  top:54.2%;
-  width:50%;
+  left:52%;
+  top:54%;
+  width:48%;
   height:2px;
   background:linear-gradient(90deg, rgba(232,102,10,1), rgba(245,242,237,.72));
   transform:translateY(-50%);
   box-shadow:0 0 18px rgba(232,102,10,.55);
   animation:forgeSinglePulse 7s ease-in-out infinite;
+  z-index:2;
 }
 
 @keyframes forgeSinglePulse{
