@@ -95,6 +95,23 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
   stroke-dashoffset:900;
   animation:forgeDraw 4s ease forwards, forgePulse 7s ease-in-out infinite;
 }
+.forge-lines .forge-in{
+  stroke-dasharray:900;
+  stroke-dashoffset:900;
+  animation:forgeDraw 3.5s ease forwards, forgePulse 7s ease-in-out infinite;
+}
+
+.forge-lines .forge-out{
+  stroke:rgba(232,102,10,1);
+  stroke-width:2.2;
+  stroke-dasharray:650;
+  stroke-dashoffset:650;
+  animation:forgeDrawOut 2.2s ease forwards 3.4s, forgePulse 7s ease-in-out infinite 3.4s;
+}
+
+@keyframes forgeDrawOut{
+  to{stroke-dashoffset:0;}
+}
 
 .forge-lines .forge-in:nth-child(2),
 .forge-lines .forge-in:nth-child(4){
@@ -117,18 +134,6 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
   filter:blur(18px);
   opacity:.85;
   animation:forgeGlow 5s ease-in-out infinite;
-}
-.forge-single-line{
-  position:absolute;
-  left:52%;
-  top:54%;
-  width:48%;
-  height:2px;
-  background:linear-gradient(90deg, rgba(232,102,10,1), rgba(245,242,237,.72));
-  transform:translateY(-50%);
-  box-shadow:0 0 18px rgba(232,102,10,.55);
-  animation:forgeSinglePulse 7s ease-in-out infinite;
-  z-index:2;
 }
 
 @keyframes forgeSinglePulse{
