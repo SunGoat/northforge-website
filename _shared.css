@@ -113,6 +113,24 @@ body{font-family:'Barlow Condensed',sans-serif;background:#080808;color:#F5F2ED;
   animation:forgeGlow 5s ease-in-out infinite;
 }
 
+.forge-single-line{
+  position:absolute;
+  left:50.8%;
+  top:54%;
+  width:49.2%;
+  height:2px;
+  background:linear-gradient(90deg, rgba(232,102,10,1), rgba(245,242,237,.72));
+  transform:translateY(-50%);
+  box-shadow:0 0 18px rgba(232,102,10,.55);
+  animation:forgeSinglePulse 7s ease-in-out infinite;
+  z-index:2;
+}
+
+@keyframes forgeSinglePulse{
+  0%,100%{opacity:.45;}
+  50%{opacity:1;}
+}
+
 .hero-mark-ghost{
   position:absolute;
   right:-40px;
